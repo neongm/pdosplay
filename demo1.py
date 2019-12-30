@@ -12,12 +12,13 @@ scr.vin('hello world', 8, 4)
 
 # scr.xsize return width of scr
 # scr.ysize returns height of scr
-# lines are numbered from 0
+# lines and cols are numbered from 0
 scr.vin('right-top', scr.xsize-len('right-top'), 0)
 scr.vin('right-bottom', scr.xsize-len('right-bottom'), scr.ysize-1)
 scr.vin('left-bottom', 0, scr.ysize-1)
 scr.vin('left-top', 0, 0)
 # render all
 scr.render()
+
 # whaiting for any input
 input()
