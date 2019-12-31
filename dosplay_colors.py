@@ -20,13 +20,19 @@ class Screen():
         index = y*self.xsize+x
         colors = self.colors
         bc = self.background_colors
-        if True:
-            for i in range(len(string)):
+        strl = len(string)
+        
+        if background!='reset' or color!='reset':
+            for i in range(1,strl):
                 ind = index + i
                 if ind < self.vram_length:
-                    if background!='reset' or color!='reset':
-                        self.vram[ind] = bc[background]+colors[color]+string[i]+colors['reset']+bc['reset']
-                    else:
+                        self.vram[ind] = string[i]
+            self.vram[index+strl-1] = string[-1]+bc['reset']+colors['reset']
+            self.vram[index] = bc[background]+colors[color]+string[0]
+        else:
+            for i in range(strl):
+                ind = index + i
+                if ind < self.vram_length:
                         self.vram[ind] = string[i]
 
     def clear_vram(self): self.vram = [' ' for i in range(self.xsize*self.ysize+1)]
