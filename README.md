@@ -5,6 +5,9 @@ module contains only one class - Screen
 aviable only for windows cmd console
 
 Screen class methods:
+
+.setup_size() - setups console size for app, coorect size requred for work
+
 .clear_vram() - clears vram
 
 .vin(string, x, y) - inserts string at x/y coordinates, the offset is calculated 
@@ -18,3 +21,6 @@ Screen class methods:
 .vram_length - returns vram length
 
 .vram - returns vram
+
+
+Colored version is too slow now, i will optimize soon.
