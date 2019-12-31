@@ -16,6 +16,7 @@ scr.vin('right-top', scr.xsize-len('right-top'), 0)
 scr.vin('right-bottom', scr.xsize-len('right-bottom'), scr.ysize-1)
 scr.vin('left-bottom', 0, scr.ysize-1)
 scr.vin('left-top', 0, 0)
+scr.vin('a', 3, 3)
 # render all
 scr.render()
 

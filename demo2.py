@@ -1,5 +1,4 @@
 from dosplay import Screen
-
 # designed to work only with cmd console
 
 # initializing Screen with xsize=80 and ysize=25
