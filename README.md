@@ -23,4 +23,4 @@ Screen class methods:
 .vram - returns vram
 
 
-Colored version is too slow now, i will optimize soon.
+Colored version requires module "colorama" and too slow now, i will optimize soon.
